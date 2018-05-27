@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
                 .addItem(new BottomNavigationItem(R.drawable.icon_two, R.string.tab_two).setActiveColorResource(R.color.orange))
                 .addItem(new BottomNavigationItem(R.drawable.icon_three, R.string.tab_three).setActiveColorResource(R.color.lime))
                 .addItem(new BottomNavigationItem(R.drawable.icon_four, R.string.tab_four))
-                .setFirstSelectedPosition(0)
-                .initialise();
+                .setFirstSelectedPosition(0)    //设置默认选择item
+                .initialise();    //初始化
 
         mBottomNavigationBar.setTabSelectedListener(this);
         setDefaultFragment();
